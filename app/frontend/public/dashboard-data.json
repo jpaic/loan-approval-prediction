@@ -1,0 +1,1209 @@
+{
+  "overviewMetrics": [
+    {
+      "label": "Applications",
+      "value": "5,000",
+      "sub": "cleaned rows"
+    },
+    {
+      "label": "Approval rate",
+      "value": "23.0%",
+      "sub": "class balance"
+    },
+    {
+      "label": "Missing values",
+      "value": "619",
+      "sub": "before imputation"
+    },
+    {
+      "label": "Best model",
+      "value": "XGBoost",
+      "sub": "by F1-score"
+    }
+  ],
+  "dataPreview": [
+    {
+      "Age": 56,
+      "Gender": "Female",
+      "City": "Houston",
+      "Education": "High School",
+      "Income": 48353.0,
+      "LoanAmount": 31258.0,
+      "CreditScore": 675.0,
+      "EmploymentType": "Unemployed",
+      "YearsExperience": 20,
+      "LoanApproved": 0
+    },
+    {
+      "Age": 69,
+      "Gender": "Male",
+      "City": "San Francisco",
+      "Education": "High School",
+      "Income": 57462.0,
+      "LoanAmount": 23262.0,
+      "CreditScore": 586.0,
+      "EmploymentType": "Self-Employed",
+      "YearsExperience": 6,
+      "LoanApproved": 0
+    },
+    {
+      "Age": 46,
+      "Gender": "Male",
+      "City": "Houston",
+      "Education": "PhD",
+      "Income": 44219.0,
+      "LoanAmount": 26530.0,
+      "CreditScore": 781.0,
+      "EmploymentType": "Self-Employed",
+      "YearsExperience": 26,
+      "LoanApproved": 1
+    },
+    {
+      "Age": 32,
+      "Gender": "Male",
+      "City": "New York",
+      "Education": null,
+      "Income": 56307.0,
+      "LoanAmount": 11531.0,
+      "CreditScore": 549.0,
+      "EmploymentType": "Unemployed",
+      "YearsExperience": 11,
+      "LoanApproved": 0
+    },
+    {
+      "Age": 60,
+      "Gender": "Female",
+      "City": "Chicago",
+      "Education": "High School",
+      "Income": 37034.0,
+      "LoanAmount": 27871.0,
+      "CreditScore": 500.0,
+      "EmploymentType": "Unemployed",
+      "YearsExperience": 19,
+      "LoanApproved": 0
+    },
+    {
+      "Age": 25,
+      "Gender": "Male",
+      "City": "New York",
+      "Education": "Masters",
+      "Income": 47886.0,
+      "LoanAmount": 18106.0,
+      "CreditScore": 835.0,
+      "EmploymentType": "Salaried",
+      "YearsExperience": 13,
+      "LoanApproved": 1
+    },
+    {
+      "Age": 38,
+      "Gender": "Female",
+      "City": "New York",
+      "Education": "High School",
+      "Income": 54748.0,
+      "LoanAmount": 25374.0,
+      "CreditScore": 760.0,
+      "EmploymentType": "Self-Employed",
+      "YearsExperience": 9,
+      "LoanApproved": 1
+    },
+    {
+      "Age": 56,
+      "Gender": "Male",
+      "City": "New York",
+      "Education": "PhD",
+      "Income": null,
+      "LoanAmount": 6279.0,
+      "CreditScore": 599.0,
+      "EmploymentType": "Unemployed",
+      "YearsExperience": 22,
+      "LoanApproved": 0
+    },
+    {
+      "Age": 36,
+      "Gender": "Female",
+      "City": "San Francisco",
+      "Education": "Bachelors",
+      "Income": 25918.0,
+      "LoanAmount": 25041.0,
+      "CreditScore": 777.0,
+      "EmploymentType": "Unemployed",
+      "YearsExperience": 29,
+      "LoanApproved": 0
+    },
+    {
+      "Age": 40,
+      "Gender": "Female",
+      "City": "San Francisco",
+      "Education": "High School",
+      "Income": 43415.0,
+      "LoanAmount": 2065.0,
+      "CreditScore": 382.0,
+      "EmploymentType": "Self-Employed",
+      "YearsExperience": 30,
+      "LoanApproved": 0
+    }
+  ],
+  "classBalance": [
+    {
+      "label": "Rejected",
+      "count": 3849,
+      "pct": 0.7698
+    },
+    {
+      "label": "Approved",
+      "count": 1151,
+      "pct": 0.2302
+    }
+  ],
+  "numericByClass": [
+    {
+      "feature": "Age",
+      "groups": [
+        {
+          "label": "Rejected",
+          "min": 20.0,
+          "q1": 31.0,
+          "median": 44.0,
+          "q3": 57.0,
+          "max": 67.0
+        },
+        {
+          "label": "Approved",
+          "min": 21.0,
+          "q1": 31.0,
+          "median": 43.0,
+          "q3": 55.0,
+          "max": 66.0
+        }
+      ]
+    },
+    {
+      "feature": "Income",
+      "groups": [
+        {
+          "label": "Rejected",
+          "min": 23808.9,
+          "q1": 37407.25,
+          "median": 47641.5,
+          "q3": 59171.75,
+          "max": 74299.7
+        },
+        {
+          "label": "Approved",
+          "min": 40493.0,
+          "q1": 46459.5,
+          "median": 53234.0,
+          "q3": 62396.0,
+          "max": 77114.4
+        }
+      ]
+    },
+    {
+      "feature": "LoanAmount",
+      "groups": [
+        {
+          "label": "Rejected",
+          "min": 6915.6,
+          "q1": 14476.0,
+          "median": 19910.0,
+          "q3": 25378.0,
+          "max": 33062.6
+        },
+        {
+          "label": "Approved",
+          "min": 7299.9,
+          "q1": 14942.0,
+          "median": 19829.0,
+          "q3": 25356.5,
+          "max": 33760.8
+        }
+      ]
+    },
+    {
+      "feature": "CreditScore",
+      "groups": [
+        {
+          "label": "Rejected",
+          "min": 318.0,
+          "q1": 403.0,
+          "median": 520.0,
+          "q3": 649.0,
+          "max": 811.0
+        },
+        {
+          "label": "Approved",
+          "min": 546.6,
+          "q1": 653.5,
+          "median": 714.0,
+          "q3": 782.5,
+          "max": 837.7
+        }
+      ]
+    },
+    {
+      "feature": "YearsExperience",
+      "groups": [
+        {
+          "label": "Rejected",
+          "min": 2.0,
+          "q1": 10.0,
+          "median": 20.0,
+          "q3": 30.0,
+          "max": 37.0
+        },
+        {
+          "label": "Approved",
+          "min": 2.0,
+          "q1": 10.0,
+          "median": 19.0,
+          "q3": 29.0,
+          "max": 38.0
+        }
+      ]
+    }
+  ],
+  "correlationMatrix": {
+    "columns": [
+      "Age",
+      "Income",
+      "LoanAmount",
+      "CreditScore",
+      "YearsExperience",
+      "LoanApproved"
+    ],
+    "values": [
+      [
+        1.0,
+        -0.0,
+        -0.01,
+        0.0,
+        -0.01,
+        -0.01
+      ],
+      [
+        -0.0,
+        1.0,
+        0.0,
+        -0.05,
+        -0.02,
+        0.19
+      ],
+      [
+        -0.01,
+        0.0,
+        1.0,
+        0.01,
+        0.01,
+        0.02
+      ],
+      [
+        0.0,
+        -0.05,
+        0.01,
+        1.0,
+        -0.0,
+        0.46
+      ],
+      [
+        -0.01,
+        -0.02,
+        0.01,
+        -0.0,
+        1.0,
+        -0.01
+      ],
+      [
+        -0.01,
+        0.19,
+        0.02,
+        0.46,
+        -0.01,
+        1.0
+      ]
+    ]
+  },
+  "approvalRateByCategory": {
+    "Gender": [
+      {
+        "category": "Male",
+        "rate": 0.2369
+      },
+      {
+        "category": "Female",
+        "rate": 0.2233
+      }
+    ],
+    "Education": [
+      {
+        "category": "PhD",
+        "rate": 0.251
+      },
+      {
+        "category": "Masters",
+        "rate": 0.2329
+      },
+      {
+        "category": "High School",
+        "rate": 0.2203
+      },
+      {
+        "category": "Bachelors",
+        "rate": 0.2156
+      }
+    ],
+    "City": [
+      {
+        "category": "San Francisco",
+        "rate": 0.2387
+      },
+      {
+        "category": "Chicago",
+        "rate": 0.2331
+      },
+      {
+        "category": "New York",
+        "rate": 0.2303
+      },
+      {
+        "category": "Houston",
+        "rate": 0.2183
+      }
+    ],
+    "EmploymentType": [
+      {
+        "category": "Salaried",
+        "rate": 0.3329
+      },
+      {
+        "category": "Self-Employed",
+        "rate": 0.3254
+      },
+      {
+        "category": "Unemployed",
+        "rate": 0.0313
+      }
+    ]
+  },
+  "modelComparison": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.884,
+      "precision": 0.774,
+      "recall": 0.7,
+      "f1": 0.7352,
+      "rocAuc": 0.9113
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.963,
+      "precision": 0.9488,
+      "recall": 0.887,
+      "f1": 0.9169,
+      "rocAuc": 0.9366
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.964,
+      "precision": 0.9533,
+      "recall": 0.887,
+      "f1": 0.9189,
+      "rocAuc": 0.9267
+    }
+  ],
+  "rocCurves": {
+    "Logistic Regression": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.087
+      },
+      {
+        "fpr": 0.0026,
+        "tpr": 0.1609
+      },
+      {
+        "fpr": 0.0039,
+        "tpr": 0.3217
+      },
+      {
+        "fpr": 0.0065,
+        "tpr": 0.3261
+      },
+      {
+        "fpr": 0.0104,
+        "tpr": 0.3565
+      },
+      {
+        "fpr": 0.0117,
+        "tpr": 0.3739
+      },
+      {
+        "fpr": 0.0143,
+        "tpr": 0.4
+      },
+      {
+        "fpr": 0.0169,
+        "tpr": 0.4304
+      },
+      {
+        "fpr": 0.0182,
+        "tpr": 0.4652
+      },
+      {
+        "fpr": 0.0208,
+        "tpr": 0.4739
+      },
+      {
+        "fpr": 0.0234,
+        "tpr": 0.5087
+      },
+      {
+        "fpr": 0.0273,
+        "tpr": 0.5174
+      },
+      {
+        "fpr": 0.0286,
+        "tpr": 0.5217
+      },
+      {
+        "fpr": 0.0299,
+        "tpr": 0.5391
+      },
+      {
+        "fpr": 0.0351,
+        "tpr": 0.5522
+      },
+      {
+        "fpr": 0.0364,
+        "tpr": 0.5826
+      },
+      {
+        "fpr": 0.0377,
+        "tpr": 0.5957
+      },
+      {
+        "fpr": 0.0403,
+        "tpr": 0.6043
+      },
+      {
+        "fpr": 0.0416,
+        "tpr": 0.6348
+      },
+      {
+        "fpr": 0.0506,
+        "tpr": 0.6435
+      },
+      {
+        "fpr": 0.0532,
+        "tpr": 0.6522
+      },
+      {
+        "fpr": 0.0545,
+        "tpr": 0.6609
+      },
+      {
+        "fpr": 0.0571,
+        "tpr": 0.6826
+      },
+      {
+        "fpr": 0.0584,
+        "tpr": 0.7
+      },
+      {
+        "fpr": 0.0649,
+        "tpr": 0.713
+      },
+      {
+        "fpr": 0.0662,
+        "tpr": 0.7217
+      },
+      {
+        "fpr": 0.0701,
+        "tpr": 0.7435
+      },
+      {
+        "fpr": 0.0779,
+        "tpr": 0.7522
+      },
+      {
+        "fpr": 0.0792,
+        "tpr": 0.7652
+      },
+      {
+        "fpr": 0.0818,
+        "tpr": 0.7696
+      },
+      {
+        "fpr": 0.0896,
+        "tpr": 0.7739
+      },
+      {
+        "fpr": 0.0909,
+        "tpr": 0.7913
+      },
+      {
+        "fpr": 0.0961,
+        "tpr": 0.8043
+      },
+      {
+        "fpr": 0.1,
+        "tpr": 0.8087
+      },
+      {
+        "fpr": 0.1013,
+        "tpr": 0.8217
+      },
+      {
+        "fpr": 0.1065,
+        "tpr": 0.8304
+      },
+      {
+        "fpr": 0.1104,
+        "tpr": 0.8478
+      },
+      {
+        "fpr": 0.113,
+        "tpr": 0.8522
+      },
+      {
+        "fpr": 0.1286,
+        "tpr": 0.8652
+      },
+      {
+        "fpr": 0.1299,
+        "tpr": 0.8739
+      },
+      {
+        "fpr": 0.1506,
+        "tpr": 0.8826
+      },
+      {
+        "fpr": 0.1532,
+        "tpr": 0.8957
+      },
+      {
+        "fpr": 0.2013,
+        "tpr": 0.9
+      },
+      {
+        "fpr": 0.2221,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.2584,
+        "tpr": 0.913
+      },
+      {
+        "fpr": 0.3052,
+        "tpr": 0.9174
+      },
+      {
+        "fpr": 0.3416,
+        "tpr": 0.9217
+      },
+      {
+        "fpr": 0.3714,
+        "tpr": 0.9304
+      },
+      {
+        "fpr": 0.526,
+        "tpr": 0.9348
+      },
+      {
+        "fpr": 0.5519,
+        "tpr": 0.9435
+      },
+      {
+        "fpr": 0.5584,
+        "tpr": 0.9478
+      },
+      {
+        "fpr": 0.5935,
+        "tpr": 0.9522
+      },
+      {
+        "fpr": 0.6299,
+        "tpr": 0.9609
+      },
+      {
+        "fpr": 0.713,
+        "tpr": 0.9652
+      },
+      {
+        "fpr": 0.7558,
+        "tpr": 0.9696
+      },
+      {
+        "fpr": 0.8026,
+        "tpr": 0.9783
+      },
+      {
+        "fpr": 0.8338,
+        "tpr": 0.9826
+      },
+      {
+        "fpr": 0.8688,
+        "tpr": 0.9957
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "Random Forest": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.0043
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.0478
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.0609
+      },
+      {
+        "fpr": 0.0013,
+        "tpr": 0.1
+      },
+      {
+        "fpr": 0.0013,
+        "tpr": 0.1261
+      },
+      {
+        "fpr": 0.0026,
+        "tpr": 0.2043
+      },
+      {
+        "fpr": 0.0026,
+        "tpr": 0.2478
+      },
+      {
+        "fpr": 0.0026,
+        "tpr": 0.287
+      },
+      {
+        "fpr": 0.0052,
+        "tpr": 0.3217
+      },
+      {
+        "fpr": 0.0052,
+        "tpr": 0.3478
+      },
+      {
+        "fpr": 0.0052,
+        "tpr": 0.413
+      },
+      {
+        "fpr": 0.0065,
+        "tpr": 0.4957
+      },
+      {
+        "fpr": 0.0065,
+        "tpr": 0.5478
+      },
+      {
+        "fpr": 0.0078,
+        "tpr": 0.5783
+      },
+      {
+        "fpr": 0.0078,
+        "tpr": 0.5957
+      },
+      {
+        "fpr": 0.0078,
+        "tpr": 0.6261
+      },
+      {
+        "fpr": 0.0091,
+        "tpr": 0.6609
+      },
+      {
+        "fpr": 0.0091,
+        "tpr": 0.6652
+      },
+      {
+        "fpr": 0.0091,
+        "tpr": 0.6957
+      },
+      {
+        "fpr": 0.0091,
+        "tpr": 0.7087
+      },
+      {
+        "fpr": 0.0104,
+        "tpr": 0.7348
+      },
+      {
+        "fpr": 0.0104,
+        "tpr": 0.7522
+      },
+      {
+        "fpr": 0.0104,
+        "tpr": 0.7609
+      },
+      {
+        "fpr": 0.0117,
+        "tpr": 0.787
+      },
+      {
+        "fpr": 0.0117,
+        "tpr": 0.813
+      },
+      {
+        "fpr": 0.0117,
+        "tpr": 0.8304
+      },
+      {
+        "fpr": 0.0117,
+        "tpr": 0.8565
+      },
+      {
+        "fpr": 0.0117,
+        "tpr": 0.887
+      },
+      {
+        "fpr": 0.0234,
+        "tpr": 0.8913
+      },
+      {
+        "fpr": 0.0286,
+        "tpr": 0.8913
+      },
+      {
+        "fpr": 0.0377,
+        "tpr": 0.8913
+      },
+      {
+        "fpr": 0.039,
+        "tpr": 0.8913
+      },
+      {
+        "fpr": 0.0481,
+        "tpr": 0.8913
+      },
+      {
+        "fpr": 0.0545,
+        "tpr": 0.8957
+      },
+      {
+        "fpr": 0.0584,
+        "tpr": 0.8957
+      },
+      {
+        "fpr": 0.0675,
+        "tpr": 0.9
+      },
+      {
+        "fpr": 0.0753,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.0818,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.1078,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.1182,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.1416,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.1519,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.1766,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.1948,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.2104,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.2494,
+        "tpr": 0.913
+      },
+      {
+        "fpr": 0.2662,
+        "tpr": 0.913
+      },
+      {
+        "fpr": 0.3052,
+        "tpr": 0.9217
+      },
+      {
+        "fpr": 0.3636,
+        "tpr": 0.9304
+      },
+      {
+        "fpr": 0.3831,
+        "tpr": 0.9348
+      },
+      {
+        "fpr": 0.4468,
+        "tpr": 0.9391
+      },
+      {
+        "fpr": 0.4922,
+        "tpr": 0.9435
+      },
+      {
+        "fpr": 0.5805,
+        "tpr": 0.9435
+      },
+      {
+        "fpr": 0.6857,
+        "tpr": 0.9609
+      },
+      {
+        "fpr": 0.7286,
+        "tpr": 0.9609
+      },
+      {
+        "fpr": 0.8494,
+        "tpr": 0.9826
+      },
+      {
+        "fpr": 0.8935,
+        "tpr": 0.9826
+      },
+      {
+        "fpr": 0.961,
+        "tpr": 0.987
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ],
+    "XGBoost": [
+      {
+        "fpr": 0.0,
+        "tpr": 0.0
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.0043
+      },
+      {
+        "fpr": 0.0,
+        "tpr": 0.0217
+      },
+      {
+        "fpr": 0.0013,
+        "tpr": 0.0217
+      },
+      {
+        "fpr": 0.0013,
+        "tpr": 0.1217
+      },
+      {
+        "fpr": 0.0026,
+        "tpr": 0.3
+      },
+      {
+        "fpr": 0.0039,
+        "tpr": 0.3
+      },
+      {
+        "fpr": 0.0039,
+        "tpr": 0.4217
+      },
+      {
+        "fpr": 0.0052,
+        "tpr": 0.4217
+      },
+      {
+        "fpr": 0.0052,
+        "tpr": 0.5043
+      },
+      {
+        "fpr": 0.0078,
+        "tpr": 0.613
+      },
+      {
+        "fpr": 0.0091,
+        "tpr": 0.613
+      },
+      {
+        "fpr": 0.0091,
+        "tpr": 0.7478
+      },
+      {
+        "fpr": 0.0104,
+        "tpr": 0.7478
+      },
+      {
+        "fpr": 0.0117,
+        "tpr": 0.8304
+      },
+      {
+        "fpr": 0.0117,
+        "tpr": 0.8435
+      },
+      {
+        "fpr": 0.013,
+        "tpr": 0.8435
+      },
+      {
+        "fpr": 0.013,
+        "tpr": 0.887
+      },
+      {
+        "fpr": 0.0961,
+        "tpr": 0.887
+      },
+      {
+        "fpr": 0.1597,
+        "tpr": 0.8913
+      },
+      {
+        "fpr": 0.1597,
+        "tpr": 0.8957
+      },
+      {
+        "fpr": 0.1649,
+        "tpr": 0.8957
+      },
+      {
+        "fpr": 0.1649,
+        "tpr": 0.9
+      },
+      {
+        "fpr": 0.2974,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.3545,
+        "tpr": 0.9043
+      },
+      {
+        "fpr": 0.3545,
+        "tpr": 0.9087
+      },
+      {
+        "fpr": 0.3584,
+        "tpr": 0.9087
+      },
+      {
+        "fpr": 0.3584,
+        "tpr": 0.913
+      },
+      {
+        "fpr": 0.3961,
+        "tpr": 0.9174
+      },
+      {
+        "fpr": 0.4286,
+        "tpr": 0.9174
+      },
+      {
+        "fpr": 0.4286,
+        "tpr": 0.9217
+      },
+      {
+        "fpr": 0.439,
+        "tpr": 0.9217
+      },
+      {
+        "fpr": 0.487,
+        "tpr": 0.9261
+      },
+      {
+        "fpr": 0.487,
+        "tpr": 0.9304
+      },
+      {
+        "fpr": 0.5091,
+        "tpr": 0.9304
+      },
+      {
+        "fpr": 0.5091,
+        "tpr": 0.9348
+      },
+      {
+        "fpr": 0.5883,
+        "tpr": 0.9348
+      },
+      {
+        "fpr": 0.6286,
+        "tpr": 0.9391
+      },
+      {
+        "fpr": 0.6286,
+        "tpr": 0.9435
+      },
+      {
+        "fpr": 0.6455,
+        "tpr": 0.9435
+      },
+      {
+        "fpr": 0.6455,
+        "tpr": 0.9478
+      },
+      {
+        "fpr": 0.6883,
+        "tpr": 0.9522
+      },
+      {
+        "fpr": 0.7013,
+        "tpr": 0.9522
+      },
+      {
+        "fpr": 0.7013,
+        "tpr": 0.9565
+      },
+      {
+        "fpr": 0.7377,
+        "tpr": 0.9565
+      },
+      {
+        "fpr": 0.7377,
+        "tpr": 0.9609
+      },
+      {
+        "fpr": 0.7429,
+        "tpr": 0.9652
+      },
+      {
+        "fpr": 0.7675,
+        "tpr": 0.9652
+      },
+      {
+        "fpr": 0.7675,
+        "tpr": 0.9696
+      },
+      {
+        "fpr": 0.839,
+        "tpr": 0.9696
+      },
+      {
+        "fpr": 0.8636,
+        "tpr": 0.9739
+      },
+      {
+        "fpr": 0.8636,
+        "tpr": 0.9783
+      },
+      {
+        "fpr": 0.8688,
+        "tpr": 0.9783
+      },
+      {
+        "fpr": 0.8688,
+        "tpr": 0.9826
+      },
+      {
+        "fpr": 0.9494,
+        "tpr": 0.9826
+      },
+      {
+        "fpr": 0.9844,
+        "tpr": 0.987
+      },
+      {
+        "fpr": 0.9844,
+        "tpr": 0.9913
+      },
+      {
+        "fpr": 0.9857,
+        "tpr": 0.9913
+      },
+      {
+        "fpr": 0.9857,
+        "tpr": 0.9957
+      },
+      {
+        "fpr": 1.0,
+        "tpr": 1.0
+      }
+    ]
+  },
+  "confusionMatrix": {
+    "model": "XGBoost",
+    "labels": [
+      "Rejected",
+      "Approved"
+    ],
+    "matrix": [
+      [
+        760,
+        10
+      ],
+      [
+        26,
+        204
+      ]
+    ]
+  },
+  "featureImportances": [
+    {
+      "feature": "Education",
+      "importance": 0.0
+    },
+    {
+      "feature": "Gender",
+      "importance": 0.0
+    },
+    {
+      "feature": "City",
+      "importance": 0.0003
+    },
+    {
+      "feature": "Age",
+      "importance": 0.0004
+    },
+    {
+      "feature": "YearsExperience",
+      "importance": 0.0011
+    },
+    {
+      "feature": "LoanAmount",
+      "importance": 0.0013
+    },
+    {
+      "feature": "Income",
+      "importance": 0.1078
+    },
+    {
+      "feature": "EmploymentType",
+      "importance": 0.1423
+    },
+    {
+      "feature": "CreditScore",
+      "importance": 0.2238
+    }
+  ],
+  "bestModel": "XGBoost",
+  "meta": {
+    "repository": "https://github.com/<your-username>/loan-approval-prediction",
+    "techStack": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "XGBoost",
+      "Next.js",
+      "TypeScript",
+      "Vercel"
+    ]
+  }
+}

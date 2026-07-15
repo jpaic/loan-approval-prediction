@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0d121b;
+  --panel: #141a25;
+  --panel-border: #262f3d;
+  --ink: #e9edf3;
+  --muted: #8892a3;
+  --approve: #34d399;
+  --approve-soft: #34d39926;
+  --reject: #f87171;
+  --reject-soft: #f8717126;
+  --accent: #60a5fa;
+  --accent-soft: #60a5fa26;
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+  --font-mono: var(--font-plex-mono);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-panel: var(--panel);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-approve: var(--approve);
+  --color-reject: var(--reject);
+  --color-accent: var(--accent);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  border-color: var(--panel-border);
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-mono-num {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 14px;
+}
+
+.dot-grid {
+  background-image: radial-gradient(var(--panel-border) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
