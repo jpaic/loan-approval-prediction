@@ -205,7 +205,7 @@ def export() -> None:
         ],
         "bestModel": best_model_name,
         "meta": {
-            "repository": "https://github.com/<your-username>/loan-approval-prediction",
+            "repository": "https://github.com/jpaic/loan-approval-prediction",
             "techStack": [
                 "Python", "Pandas", "Scikit-learn", "XGBoost",
                 "Next.js", "TypeScript", "Vercel",

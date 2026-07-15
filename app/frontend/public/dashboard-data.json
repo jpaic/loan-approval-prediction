@@ -1195,7 +1195,7 @@
   ],
   "bestModel": "XGBoost",
   "meta": {
-    "repository": "https://github.com/<your-username>/loan-approval-prediction",
+    "repository": "https://github.com/jpaic/loan-approval-prediction",
     "techStack": [
       "Python",
       "Pandas",
